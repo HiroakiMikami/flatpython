@@ -4,6 +4,8 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 
+logger = logging.getLogger(__name__)
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -13,6 +15,7 @@ def main():
     )
     args = parser.parse_args()
     for file in args.files:
+        logger.info(f"Check {file}...")
         with open(file) as f:
             if not lint(f.read()):
                 exit(1)
