@@ -1,0 +1,11 @@
+*
+!*/
+!/LICENSE
+!/.gitignore
+!/.github/workflows/*.yml
+!/setup.py
+!/setup.cfg
+!/Makefile
+!/pyproject.toml
+!/flatpython/**/*.py
+!/test/**/*.py
